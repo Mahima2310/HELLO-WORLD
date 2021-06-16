@@ -1,0 +1,399 @@
+@import 'utilities.css';
+
+:root{
+    --primary:#000000;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#000000;
+    --light:#F2F2F2;
+    --secondary:#070606;
+	--background:#FDF4DC;
+}
+
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    --webkit-font-smotthing:antialised;
+
+}
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+header{
+    background-color: var(--dark);
+    clip-path: polygon(0 0, 100% 0,100% 100%,0 100%) ;
+    background: linear-gradient(rgba(230,230,250),rgba(255,99,71,0.2));
+    /*scroll*/
+    scroll-behavior: smooth;
+    
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+
+
+
+
+header nav .left a{
+    color: var(--dark);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav .left a:hover{
+color: var(--primary);
+}
+
+header nav{
+    padding: 2rem 0;;
+}
+
+header nav .branding{
+    margin-right: 6rem;
+}
+
+header nav .branding img{
+    height: 4rem;
+}
+
+.heroine .right{
+    color: var(--dark);
+    height: 450px;
+    text-align: left;
+}
+
+.heroine .right h6{
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 0.5;
+    text-align: left;
+    color: var(--primary);
+}
+
+.heroine .right h1{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.heroine .right h1 span{
+    color: var(--primary);
+    font-family: 'Source Code Pro', monospace;
+}
+
+.heroine .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+
+}
+
+.heroine .right{
+    margin-top: -2rem;
+}
+
+section{
+    padding: 6rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+  
+}
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+section.about h1 span{
+    color: var(--primary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    
+}
+
+section.about p{
+    font-family: 'Lato',sans-serif;
+    font-weight: bold;
+    color: var(--ternary);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+
+}
+
+section.about .social{
+    display: flex;
+}
+
+section.about .social a{
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: -32rem;
+    margin-left: 520px;
+   
+}
+
+section.about span{
+    color:var(--secondary);
+}
+
+section.about .social a:hover{
+    background: var(--ternary);
+}
+
+section.about .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.1rem;
+}
+
+.section-heading{
+    color:var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Lato',sans-serif;
+    margin-bottom: 6rem;
+    text-align: center;
+
+}
+
+section.projects{
+    background: var(--light);
+
+}
+
+
+
+section.projects .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 5rem;
+    margin-top: 6rem;
+    
+}
+
+section.projects .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all .3s ease ;
+    display: block;
+    text-decoration: none;
+    color: black;
+
+}
+
+section.projects .card-wrapper .card img{
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.projects .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.projects .card-wrapper .card p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+section.projects .card-wrapper .card:hover{
+    background: var(--dark);
+}
+
+section.projects .card-wrapper .card:hover h2, section.projects .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+
+section.education{
+    background: var(--pure);
+
+}
+
+section.education.slider.slide{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 5rem;
+    margin-top: 6rem;
+    
+}
+
+section.projects .slider.slide{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all .3s ease ;
+    display: block;
+    text-decoration: none;
+    color: black;
+
+}
+
+section.projects .slider .slide{
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    top: -2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.projects .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.projects .card-wrapper .card p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+section.projects .card-wrapper .card:hover{
+    background: var(--dark);
+}
+
+section.projects .card-wrapper .card:hover h2, section.projects .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+
+section.education.slider.slide
+{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 5rem;
+    margin-top: 6rem;
+    
+}
+
+
+
+
+section.contact{
+    background: var(--background);
+}
+
+section.contact .section-heading{
+    color: var(--dark);
+}
+
+
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+
+section.contact .card-wrapper .card img{
+    height: 4.9rem;
+    margin-top: 2rem;
+}
+
+section.contact .section-heading{
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    margin-top: -2rem;
+}
+
+section.contact .card-wrapper .card h1{
+    color: #898989;
+    font-family: 'Lato',sans-serif;
+}
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+
+}
+
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+
+section.contact input{
+    padding: 0.6rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+}
+
+section.contact .input-wrap-2 input{
+    margin-top: -0.5rem;
+}
+
+section.contact .input-wrap-2 textarea{
+    padding: 0.6rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+}
+
+section.contact .input-wrap-2 input{
+    margin-bottom: 1rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+}
+
+section.contact input:focus{
+    outline: none;
+}
+
+section.contact .input-wrap-2 textarea:focus{
+    outline: none;
+}
+
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 1.5rem;
+
+}
